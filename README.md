@@ -31,6 +31,17 @@ _package.json_
 - _--mode developpement_: génère le fichier ./dist/main.js non minifié pour le développement
 - _--mode production_: génère le fichier ./dist/main.js minifié pour la prod
 
+- Webpack-dev-server
+```
+$ yarn add webpack-dev-server --dev
+```
+```json
+"scripts": {
+    "dev": "webpack-dev-server --progress --mode development",
+  }
+```
+
+
 ## 2 - Babel
 
 ```
