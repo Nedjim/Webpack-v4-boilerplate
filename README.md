@@ -15,14 +15,13 @@ Créer le point d'entrée
 console.log('Webpack 4 configuration')
 ```
 **NB**: 
-
 Nous n'avons plus besoin du fichier de configuration _webpack.config.js_ pour: 
 - le point d'entrée _./src/index.js_
 - le point de sortie _./dist/main.js_
-- les modes développement et production
+- les modes de développement et de production
 
 
-.package.json
+_package.json_
 ```json
 "scripts": {
   "dev": "webpack --mode development",
@@ -37,7 +36,7 @@ Nous n'avons plus besoin du fichier de configuration _webpack.config.js_ pour:
 ```
 $ yarn add babel-core babel-loader babel-preset-env --dev
 ```
-- Créer le fichier .babelrc
+- Créer le fichier _.babelrc_
 ```json
 {
     "presets": [
