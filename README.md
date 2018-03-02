@@ -12,7 +12,10 @@ $ yarn add webpack-cli --dev
 Créer le point d'entrée
 ./scr/index.js
 ```js
-console.log('Webpack 4 configuration')
+import { render } from 'react-dom'
+import App from './components/App'
+
+render(App(), document.getElementById('app'))
 ```
 **NB**: 
 Nous n'avons plus besoin du fichier de configuration _webpack.config.js_ pour: 
@@ -25,7 +28,8 @@ _package.json_
 ```json
 "scripts": {
   "dev": "webpack --mode development",
-  "build": "webpack --mode production" 
+  "build": "webpack --mode production",
+  "start": "webpack-dev-server --hot --inline"
 }
 ```
 - _--mode developpement_: génère le fichier ./dist/main.js non minifié pour le développement
